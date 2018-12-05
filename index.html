@@ -1,40 +1,120 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Startup</title>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Landing</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/fullpage.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="fp-nav" class="fp-right" style="margin-top: -33.5px;">
+		<ul>
+			<li>
+				<a href="#section0" class="active"><span></span></a>
+			</li>
+			<li>
+				<a href="#section1" class=""><span></span></a>
+			</li>
+			<li>
+				<a href="#section3" class=""><span></span></a>
+			</li>
+		</ul>
+	</div>
+	<header class="main-section__head">
+		<a class="logo-text" href="#">
+			Recipe
+		</a>
+		<nav>
+			<ul class="site-list" id="menu">
+				<li class="site-list__item">
+					<a href="#firstPage">О нас</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#secondPage">Преимущества</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#3rdPage">Отзывы</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div id="fullpage">
+		<section class="main-section section" id="section0">
+			<div class="container">
+				<div class="content-wrap">
+					<div class="content-block">
+						<h1 class="content-block__title">Recipe</h1>
+						<p class="content-block__text">
+							Лучшее приложение для сохранения<br>
+							ваших любимых рецептов
+						</p>
+						<a class="content-block__button" href="../index.html">
+							Перейти в приложение
+						</a>
+					</div>
+					<div>
+						<img src="img/laptop.png" alt="Ноутбук" class="laptop-img">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="features section" id="section1">
+			<div class="container">
+				<h2 class="features__title">Преимущества</h2>
+				<ul class="features-list">
+					<li class="features-list__item features-list__item--interface">
+						<h3 class="features-list__title">
+							УДОБНЫЙ <br>
+							ИНТЕРФЕЙС
+						</h3>
+					</li>
+					<li class="features-list__item features-list__item--support">
+						<h3 class="features-list__title">
+							ПОСТОЯННАЯ<br>
+							ПОДДЕРЖКА
+						</h3>
+					</li>
+					<li class="features-list__item features-list__item--adaptive">
+						<h3 class="features-list__title">
+							АДАПТИВНО ПОД<br>
+							РАЗЛИЧНЫЕ УСТРОЙСТВА
+						</h3>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="reviews section" id="section2">
+			<div class="container">
+				<h2 class="reviews__title">Отзывы</h2>
+				<ul class="reviews-list">
+					<li class="reviews-list__item">
+						<img src="img/face.png" alt="face of author">
+						<p class="reviews-list__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						</p>
+					</li>
+					<li class="reviews-list__item">
+						<img src="img/face.png" alt="face of author">
+						<p class="reviews-list__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						</p>
+					</li>
+					<li class="reviews-list__item">
+						<img src="img/face.png" alt="face of author">
+						<p class="reviews-list__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-    <!-- Note that the below Bootstrap file is a specific version. If you grab the most
-    current from Bootstrap website, you will see the button grow transition being a lot faster
-    than in my video. Use whichever style sheet you like best! -->
-    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- My own stylesheet -->
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="startup text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-12 my-auto">
-            <h1 class="text-uppercase faded">
-              <strong>the biggest startup event of the year</strong>
-            </h1>
-            <hr>
-          </div>
-          <div class="col-lg-12 my-auto">
-            <button class="btn btn-primary btn-xl">Find Out More</button>
-          </div>
-        </div>
-      </div>
-    </header>
-
-  </body>
-
+	<script src="js/jquery.js"></script>
+	<script src="js/fullpage.min.js"></script>
+	<script src="js/enquire.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
 </html>
-
-
-<!-- E{oda}03hQua? -->
