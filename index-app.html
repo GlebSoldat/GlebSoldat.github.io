@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Recipes app</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/main-app.css">
+</head>
+
+<body class="main-page">
+	<section class="main-section">
+		<h1 class="main-section__title">Recipe App</h1>
+		<div class="search-block">
+			<input type="text" id="search" class="search-block__input" placeholder="Поиск">
+			<div class="cross" style="display: none;">
+				x
+				<div class="visually-hidden">
+					Стереть поле
+				</div>
+			</div>
+		</div>
+
+		<div id="add-block"></div>
+
+		<button id="add-button" class="main-section__button">Добавить рецепт</button>
+	</section>
+
+	<script src="js/uuidv4.js"></script>
+	<script src="js/main-function.js"></script>
+	<script src="js/main-app.js"></script>
+</body>
+
+</html>

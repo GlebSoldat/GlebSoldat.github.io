@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main-app.css">
+    <title>Document</title>
+</head>
+<body class="edit-page">
+    <section class="edit-section">
+        <a href="index.html" class="edit-section__return">Назад</a>
+        <div id="block" class="info-block">
+            <input type="text" id="title-text" placeholder="Заголовок">
+            <textarea id="steps-area" placeholder="Шаги приготовления"></textarea>
+        </div>
+
+        <h2 class="ingr-title">Ингридиенты</h2>
+
+        <div id="ingredients-block"></div>
+
+        <form id="form" class="form-ingr">
+            <input type="text" id="create-input" placeholder="Добавить ингридиент" class="form-ingr__input" name='text'>
+            <button class="form-ingr__button">Добавить</button>
+        </form>
+
+        <h2 class="delete-title">Опасная зона</h2>
+        <button id="delete-button">Удалить рецепт</button>
+    </section>
+
+    <script src="js/uuidv4.js"></script>
+    <script src="js/main-function.js"></script>
+    <script src="js/edit-function.js"></script>
+    <script src="js/edit.js"></script>
+</body>
+</html>

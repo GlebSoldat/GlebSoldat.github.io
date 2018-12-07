@@ -55,5 +55,5 @@ document.querySelector('#delete-button').addEventListener('click', function (e) 
         saveRecipe(recipe)
     }
 
-    location.assign(`index.html`)
+    location.assign(`index-app.html`)
 })

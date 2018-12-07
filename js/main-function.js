@@ -23,10 +23,10 @@ const generateRecipeDOM = function (recipe) {
     if (recipe.title.length > 0) {
         recipeTitle.textContent = recipe.title
     } else {
-        recipeTitle.textContent = 'Unnamed recipe'
+        recipeTitle.textContent = 'Безымянный рецепт'
     }
 
-    recipeText.textContent = `You have ${recipe.total} of the ingredients`
+    recipeText.textContent = `У вас ${recipe.total} ингридиентов`
 
     recipeEl.appendChild(recipeTitle)
     recipeEl.appendChild(recipeText)
@@ -51,7 +51,7 @@ const renderRecipe = function (recipe, filter) {
         })
     } else {
         const holeEl = document.createElement('p')
-        holeEl.textContent = 'Add your first recipe'
+        holeEl.textContent = 'Добавь свой первый рецепт'
         document.querySelector('#add-block').appendChild(holeEl)
     }
 }

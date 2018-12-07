@@ -56,11 +56,11 @@ const generateIngredientsDOM = function (ingridient) {
     if (ingridient.text.length > 0) {
         heading.textContent = ingridient.text
     } else {
-        heading.textContent = 'Unnamed ingridient'
+        heading.textContent = 'Безымянный ингридиент'
     }
 
     const remove = document.createElement('button')
-    remove.textContent = 'remove'
+    remove.textContent = 'Удалить'
 
     remove.addEventListener('click', function () {
         removeIngridients(ingridient.id)
@@ -86,7 +86,7 @@ const renderIngridients = function (ingr) {
         })
     } else {
         const emptyEl = document.createElement('p')
-        emptyEl.textContent = 'Add ingridient'
+        emptyEl.textContent = 'Добавьте ингридиент'
         document.querySelector('#ingredients-block').appendChild(emptyEl)
     }
 }
@@ -105,11 +105,11 @@ const generateSubtitleText = function (ingr, oneRecipe) {
     let total = ''
 
     if (completed.length === 0) {
-        total = 'none'
+        total = 'ничего'
     } else if (uncompleted.length === 0) {
-        total = 'all'
+        total = 'все'
     } else {
-        total = 'some'
+        total = 'не зватает'
     }
 
     oneRecipe.total = total
