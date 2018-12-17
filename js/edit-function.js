@@ -105,11 +105,11 @@ const generateSubtitleText = function (ingr, oneRecipe) {
     let total = ''
 
     if (completed.length === 0) {
-        total = 'ничего'
+        total = 'нет'
     } else if (uncompleted.length === 0) {
-        total = 'все'
+        total = 'хватает'
     } else {
-        total = 'не зватает'
+        total = 'не хватает'
     }
 
     oneRecipe.total = total
